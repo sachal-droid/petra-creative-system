@@ -1,0 +1,13 @@
+{
+  "name": "petra-creative",
+  "owner": {
+    "name": "Petra Brands"
+  },
+  "plugins": [
+    {
+      "name": "petra",
+      "source": "./plugins/petra",
+      "description": "Agency-grade creative process for websites, images, decks, packaging, listing images, marketing designs, video and animation."
+    }
+  ]
+}
