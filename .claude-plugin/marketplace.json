@@ -7,7 +7,8 @@
     {
       "name": "petra",
       "source": "./plugins/petra",
-      "description": "Agency-grade creative process for websites, images, decks, packaging, listing images, marketing designs, video and animation."
+      "description": "Agency-grade creative process for websites, images, decks, packaging, listing images, marketing designs, video and animation.",
+      "version": "0.2.0"
     }
   ]
 }
