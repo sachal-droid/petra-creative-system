@@ -18,9 +18,19 @@ Ask in one round, at most four questions, skipping anything already answered:
 4. References, likes and dislikes, deadline
 
 Then collect:
-- Brand kit: an installed brand skill, or the user's filled copy of `templates/brand-kit.md`. If there is none, build a short one from the brand's site and listings during Discovery and mark it unconfirmed.
+- Brand kit: an installed brand skill (for Petra brands, `petra-ad-creative` holds `brands/<brand>/identity.json` and `voice.md`; read them first), or the user's filled copy of `templates/brand-kit.md`. If there is none, build a short one from the brand's site and listings during Discovery and mark it unconfirmed.
 - Canonical product photos: one per variant, tight crop, label legible, at least 1200px.
 - Product facts: size or count, ingredients or materials, how it is used, certifications, price point.
+- Who the work speaks to: a shopper (consumer-facing) or a buyer (trade-facing: sell-in deck, sell sheet, line review). Trade-facing jobs run the trade variant of each stage below.
+
+## Trade-facing variant
+
+When the audience is a retail buyer, category manager or distributor:
+- Discovery covers the retailer's category (what is on shelf, price ladder, private label, gaps), the buyer's scorecard (velocity, margin, turns, OTIF, compliance) and the brand's proof (sell-through where it exists, ratings, social traction, doors).
+- The persona is the buyer, defined by what they are measured on and what gets them fired, not by lifestyle.
+- The proposition answers "why this brand, in this category, at this retailer, now" in one line.
+- Directions are three ways to argue the case (for example category disruptor, value leader, purpose-driven brand), each with a different lead proof.
+- Copy follows the trade copy rules in `petra:standards`. Every figure is confirmed with the user before it goes into the Locked Brief.
 
 ## Stage 1: Discovery
 
@@ -64,6 +74,7 @@ Deliverable: Copy bank
 - 5 headlines, 3 subheads, body copy at the length this deliverable needs, 3 calls to action, proof points
 - Each tagged with persona and awareness stage, with the strongest in each group marked
 - All of it following the copy rules in `petra:standards`
+- Claims list: every claim used, its source, and whether the regulated-claims check in `petra:standards` flagged it. Flagged claims are shown to the user here, before any direction is built on them.
 
 ## Stage 3: Three directions
 
