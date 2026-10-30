@@ -15,7 +15,9 @@ An agency process for Claude. Every job runs the way a good agency runs it: rese
 | Video | `/petra:video` | Seedance 2.5 clips at 480p |
 | Animation and motion graphics | `/petra:animation` | MP4 or HTML |
 
-Not sure which? Run `/petra:start` and describe the job.
+Not sure which? Run `/petra:start` and describe the job. To revise a finished job, run `/petra:start` and attach its job record (`*_RUN.md`).
+
+Decks, sell sheets and line review submissions for retail buyers run a trade-facing variant: buyer persona, retailer scorecard, and a numbers audit before anything is typed.
 
 ## How every job runs
 
@@ -47,12 +49,17 @@ In Claude Code:
 
 Copy `plugins/petra/skills/strategy/templates/brand-kit.md`, fill it in, and attach it when you start a job, along with one clear photo per product variant. Without a brand kit, the system drafts one from your website and listings and asks you to confirm it.
 
+Keep filled brand kits out of this public repo. Attach them per job, or keep them in a private skill (Petra's own brand files live in a private `petra-ad-creative` skill that the pipelines read when it is installed).
+
 ## Defaults
 
 | | Default | Limit |
 |---|---|---|
-| Images | Nano Banana 2.1 | 2K max |
+| Images, product truth | Nano Banana 2.1 | 2K max |
+| Images, mockups, typography, cutouts, style transfer | GPT Image 2.5 | 2K max |
 | Video | Seedance 2.5 | 480p draft, can be finalized at 1080p within 7 days |
+
+Every job keeps a job record (prompts, references, seeds, job ids, QC results) so it can be rerun or revised later. Every claim passes a regulated-claims check (cosmetics, pet, children's products, medical devices, sustainability) before copy is approved.
 
 Change any default by saying so in the chat. The change holds for the rest of that job.
 
